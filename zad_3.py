@@ -27,8 +27,6 @@ class Employee:
         self.work_time = 0.0
         self.work_time_overhours = 0.0
 
-
-
     def register_time(self, hours: float):
         if hours <= 8:
             self.work_time += hours
@@ -48,7 +46,6 @@ class Employee:
 
 pracownik_1 = Employee("Jan", "Kowalski", 100)
 pracownik_1.register_time(12)
-
 
 print(pracownik_1.pay_salary())
 
@@ -71,10 +68,9 @@ def test_nadgodziny():
     emp1.register_time(12)
     assert emp1.pay_salary() == (8 * 100.0 + 4 * 100.0 * 2)
 
+
 def test_dwa_dni_pracy():
     emp1 = Employee("Jan", "Kowalski", 100)
     emp1.register_time(12)
     emp1.register_time(5)
     assert emp1.pay_salary() == 2100.0
-
-

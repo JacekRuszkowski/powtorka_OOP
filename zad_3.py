@@ -47,7 +47,7 @@ class Employee:
 pracownik_1 = Employee("Jan", "Kowalski", 100)
 pracownik_1.register_time(12)
 
-print(pracownik_1.pay_salary())
+# print(pracownik_1.pay_salary())
 
 
 def test_zwykle_godziny():
